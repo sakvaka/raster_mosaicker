@@ -1,10 +1,10 @@
 cmake_minimum_required(VERSION 3.14)
 
 # project name
-project(raster_mosaicer)
+project(raster_mosaicker)
 
 # add executable
-add_executable(${PROJECT_NAME} raster_mosaicer.cpp parse.cpp)
+add_executable(${PROJECT_NAME} "raster_mosaicker.cpp" parse.cpp)
 
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED True)

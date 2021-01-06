@@ -1,11 +1,11 @@
-# raster_mosaicer
-A tool for mosaicing together a set of raster tiles so that the output is only provided in areas where there is data in a user-provided validity mask.
+# raster_mosaicker
+A tool for mosaicking together a set of raster tiles so that the output is only provided in areas where there is data in a user-provided validity mask.
 
 Most effective when the validity mask is a tiled sparse GeoTIFF, as the code goes through the validity mask block by block and does not attempt mosaicking at the empty blocks in the validity mask.
 
 ## Usage
 
-`raster_mosaicer.exe -m [MASK.TIF] -i [TILE_INPUT_PATH] -l [TILE_LIST.TXT] -o [DST_FILENAME.TIF] [-v]`
+`raster_mosaicker.exe -m [MASK.TIF] -i [TILE_INPUT_PATH] -l [TILE_LIST.TXT] -o [DST_FILENAME.TIF] [-v]`
 
 Mosaics the tiles located at `TILE_INPUT_PATH` based on the tile filepaths (relative to `TILE_INPUT_PATH`) given in `TILE_LIST` (whose path is also relative to `TILE_INPUT_PATH`). Only mosaics areas that contain a valid value in `MASK.TIF` raster.
 

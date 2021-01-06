@@ -4,7 +4,7 @@
 extern int verbose;
 
 static void usage() {
-    std::cerr << "raster_mosaicer by S. Vakeva (2020)\n\nUsage: raster_mosaicer.exe -m [MASK.TIF] -i [TILE_INPUT_PATH] -l [TILE_LIST.TXT] -o [DST_FILENAME.TIF] [-v]\n";
+    std::cerr << "raster_mosaicker by S. Vakeva (2020)\n\nUsage: raster_mosaicker.exe -m [MASK.TIF] -i [TILE_INPUT_PATH] -l [TILE_LIST.TXT] -o [DST_FILENAME.TIF] [-v]\n";
     std::cerr << "\nMosaics the tiles located at TILE_INPUT_PATH based on the tile filenames given in TILE_LIST.\n";
     std::cerr << "\nOnly mosaics areas that contain a valid value in MASK.TIF raster.\n";
 }
